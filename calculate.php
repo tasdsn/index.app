@@ -6,6 +6,8 @@ if ($_POST) {
 	//数字かどうかを判定
 	if (is_numeric($num1) && is_numeric($num2)) {
 		$result = '計算結果：' . ($num1 + $num2) . '<br>';
+	} elseif (empty($num1) || empty($num1)) {
+		$result = '何も入れてないのに計算するわけないやろが！！<br>';
 	} else {
 		$result = '計算って言ったら数字入れろや！！<br>';
 	}
