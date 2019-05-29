@@ -6,6 +6,7 @@
 </head>
 <body>
 <?php if ($_GET): ?>
+<h1><?php echo $_GET['check']; ?></h1>
 <?php echo $_GET['result']; ?>
 <?php endif; ?>
 <a href='index.php'>もう一度計算する</a>
